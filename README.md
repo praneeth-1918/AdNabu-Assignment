@@ -1,39 +1,64 @@
-# AdNabu-Assignment
-QA Automation Assignment using Selenium Python - Covers Product search &amp; Add to cart with well-structured test cases and automation script.
+AdNabu QA Automation Assignment
 
-# QA Assignment – AdNabu Test Store
 
-This repository contains the solution for the Quality Assurance Engineer assignment.
+Overview:
 
-# Scope
-The assignment focuses on:
-- Designing test cases for:
-- Product Search
-- Add to Cart
-- Automating a key user flow:
-- Search for a product and add it to the cart
+This project demonstrates automation of an e-commerce workflow using Selenium + Python.
 
-## Test Design
-- Includes 12 high-quality test cases
-- Covers:
-- Positive scenarios
-- Negative scenarios
-- Edge cases
-- Structured in industry-standard format
+It covers core QA skills including test design, automation, and reporting.
 
-#Test Automation
-- Built using **Python + Selenium**
-- Implements:
-- Explicit waits (no hardcoded sleeps)
-- Clean and readable code
-- Scenario covered:
-- Product search → Product selection → Add to cart → Validation
+Features:
+Product Search Automation
+Add to Cart Validation
+Shopify Password Page Handling
+Page Object Model (POM) Framework
+PyTest Integration
 
-##  Tech Stack
-- Python
-- Selenium WebDriver
+Framework Design:
+This project follows a Hybrid Automation Framework:
+Selenium WebDriver → UI Automation
+PyTest → Test execution
+Page Object Model (POM) → Maintainability & reusability
 
-## How to Run
-1. Install dependencies:
-```bash
-pip install selenium
+Test Scenario Covered:
+Open Shopify store
+Enter password (AdnabuQA)
+Search for product
+Select product
+Add to cart
+Validate cart
+
+Framework Components:
+
+Base Page:
+Common reusable methods
+click(), send_keys(), waits
+
+Page Classes:
+login_page.py → Password handling
+search_page.py → Product search
+product_page.py → Add to cart
+
+Test Layer
+Contains test cases using PyTest
+
+Driver page
+Handles browser initialization
+
+Metric                 Value
+
+Total Test Cases       12
+Passed                 11
+Failed                 1
+Pass %                91.6%
+
+Setup instryctions:
+1.Clone repository
+2.Install dependencies
+3.Install chrome driver
+
+To Run all the tests - pytest AUTOMATION/tests -v
+
+-->Core functionalities are properly automated
+-->Frameworks is scalable and maintainable.
+
