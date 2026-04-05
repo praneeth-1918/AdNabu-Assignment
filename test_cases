@@ -1,0 +1,18 @@
+Task 1: Test Design
+A) Product Search Test Cases
+Test Case ID	Scenario Name	Test Steps	Expected Results
+TC_PS_01	Verify with Valid Search	Enter 'Shoes' and search	Relevant products displayed
+TC_PS_02	Verify with Partial Search	Enter 'Sho'	Matching results shown
+TC_PS_03	Verify with Invalid Search	Enter random text	No results message
+TC_PS_04	Verify with Empty Search	Click search without input	Validation or all products
+TC_PS_05	Verify with Special Characters	Enter @#$%&*(	It should Handle correctly.
+TC_PS_06	Verifying with Long Input	Enter 300+ chars	No crash, should handle properly
+
+B) Add to Cart Test Cases
+Test Case ID	Scenario Name	Test Steps	Expected Results
+TC_AC_01	Verify with Add Product	Add item to cart	Item should get added successfully
+TC_AC_02	Verify with Multiple Quantity	Increase quantity	Correct quantity added
+TC_AC_03	Verify with Out of Stock products	Add unavailable product to the cart	Error message should be generated.
+TC_AC_04	Verify with Duplicate Add	Add same product twice	Quantity should be updated
+TC_AC_05	Verify with Without Selection	Add without variant	Should get the Validation message.
+TC_AC_06	Verify with Cart Persistence	Refresh page	Cart should retain.
